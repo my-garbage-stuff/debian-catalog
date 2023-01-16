@@ -16,8 +16,8 @@ jobs:
         run: |
           set -ex
           bash build.sh
-          mkdir output
-          mv catalog.txt /output
+          sudo mkdir /output
+          sudo mv catalog.txt /output
 
 
       - uses: "marvinpinto/action-automatic-releases@latest"
